@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Memory Game</h1>
-    <div class="grid">
-      <div class="card" data-card="1"></div>
-      <div class="card" data-card="1"></div>
-      <div class="card" data-card="2"></div>
-      <div class="card" data-card="2"></div>
-      <div class="card" data-card="3"></div>
-      <div class="card" data-card="3"></div>
-      <div class="card" data-card="4"></div>
-      <div class="card" data-card="4"></div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>My Simple HTML Game</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 50px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to My Simple HTML Game</h1>
+	<p>Click the button below to play:</p>
+	<button onclick="play()">Play</button>
+
+	<script>
+		function play() {
+			alert("Congratulations, you won!");
+		}
+	</script>
+</body>
 </html>
